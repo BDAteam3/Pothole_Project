@@ -1,7 +1,7 @@
-# PotholeVision: Binary Pothole Classification Project
+# PotholeVision: Automating Pothole Detection and GeoMapping
 
 ## Overview
-This project aims to build a robust binary pothole classification system for road images and video frames. It evolved from a general road-damage classification task into a strict pothole-recognition system, specifically addressing challenges like domain shift and ambiguous visual boundaries between potholes and other road damage (e.g., alligator cracks).
+The road inspection process for cities is highly manual, slow, and expensive. Municipalities desperately need a scalable way to identify road damage faster and prioritize repairs. To solve this, we developed PotholeVision, an automated pothole detection and geo-mapping solution. We built a big data pipeline that ingests video and image data in batches, extracts frames, and evaluates them using a ResNet18-based Convolutional Neural Network. This technical pipeline drives direct business value by pushing positive pothole predictions into a dynamic ArcGIS dashboard. Through this dashboard, Public Works planners can view pothole counts, exact locations, and street traffic volumes to prioritize repairs on the busiest roads. Ultimately, PotholeVision drives faster repairs, better allocation of limited maintenance resources, and a significant reduction in vehicle accidents.
 
 ## Project Structure
 - `model_artifacts/`: Contains the trained model weights (`weights.pth`), configuration (`config.json`), and a TorchScript version (`model_v3_traced.pt`).
@@ -40,9 +40,7 @@ print(result)
 - **YOLOv8 Pothole Segmentation:** Used for strengthening the positive class in Model V3.
 - **Neha Normal/Pothole Dataset:** Used as an independent external benchmark.
 
-
-## Pipeline: ...
-
 ## Team
 Team 3: Chunfang Wang, James Pashek, Joseph Sheehan, Moses Akoto, Madhu Damani, Tao Fang.
-Developed as part of MSBA 6331: Big Data Analytics.
+
+* This project repository is created in partial fulfillment of the requirements for the Big Data Analytics course offered by the Master of Science in Business Analytics program at the Carlson School of Management, University of Minnesota.
