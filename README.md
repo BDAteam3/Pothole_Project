@@ -30,6 +30,7 @@ The final deployment candidate is the v3 ResNet18 classifier, which was improved
 - `reports/`
   - `team_pothole_summary_report.md`
   - `team_pothole_summary_report.pdf`
+  - `Project_Flyer.pdf`: Final project flyer/handout.
   - `ArcGIS_Data_Flow.pdf`: ArcGIS dashboard/data-flow document showing how prediction outputs are mapped and visualized.
 - `requirements.txt`: Python package dependencies for local model usage.
 
